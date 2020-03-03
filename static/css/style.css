@@ -1,0 +1,64 @@
+body {
+    background: url("../images/landing.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.landing {
+    background: url("../images/landing.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.min-vh-90 {
+    min-height: 90vh;
+}
+.flex-fill {
+    margin: 1px;
+}
+#lotfloor {
+    background: url("../images/texture.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 10px solid #E5D663;
+}
+
+#turnspace {
+    border: 2px solid #E5D663;
+    border-radius: 4px;
+    background: repeating-linear-gradient(45deg,
+  #00000000,
+  #00000036 15px,
+  #E5D663 0,
+  #E5D663 40px
+)}
+#leftlots div, #rightlots div{
+    border: solid #E5D663;
+    display: flex;
+    justify-content: center;
+    align-items: center; color: #fff;
+    text-shadow: 3px 2px 1px #000000; font-weight: 900;
+    font-size: x-large;
+}
+.lotSpecial {
+    background: rgba(132, 0, 255, 0.692);
+}
+.lotBooked {
+    background: rgba(255, 0, 0, 0.589);
+}
+.lotAvailable {
+    background: rgba(0, 128, 0, 0.609);
+}
+#leftlots div:hover, #rightlots div:hover{
+    background: rgba(53, 169, 236, 0.582);
+    border-radius: 6px;
+    transition: .4s;
+}
+#leftlots div{
+    border-width: 0 0 2px 2px;
+}
+#rightlots div{
+    border-width: 0 2px 2px 0;
+}

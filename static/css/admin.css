@@ -1,0 +1,9 @@
+#addLotForm {
+    background: rgba(255, 255, 255, 0.383);
+    padding: 4px;
+    border-radius: 20px 4px;
+    margin: 2px;
+}
+.form-group input {
+    background: rgba(248, 248, 248, 0.15);
+}
