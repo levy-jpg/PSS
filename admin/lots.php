@@ -26,6 +26,14 @@ include ("head.php");
                 </select>
             </div>
             <div class="form-group">
+                <label for="special">For Special People?</label>
+                <select name="special" class="form-control">
+                    <option value="" disabled selected>Special Parking?</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div class="form-group">
                 <button type="submit" class="btn btn-success form-control">Commit</button>
             </div>
         </form>
