@@ -45,18 +45,19 @@
             if($special == 1){
               $output = '
                   <div class="flex-fill lotSpecial">
-                  '.$row['lotName'].'
+                    '.$row['lotName'].'
                   </div>';
             }else {
                 if(($row['booked']) == 0){
                   $output = '
                   <div class="flex-fill lotAvailable">
-                  '.$row['lotName'].'
+                    '.$row['lotName'].'
                   </div>';
-                }elseif(($row['booked'])==2){
+                }
+                elseif(($row['booked'])==1){
                   $output = '
                   <div class="flex-fill lotBooked">
-                     '.$row['lotName'].'
+                    '.$row['lotName'].'
                   </div>';
                 }
             }
