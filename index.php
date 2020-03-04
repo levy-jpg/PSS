@@ -4,7 +4,7 @@ include("head.php");
 include("static/includes/lotprocessor.php");
 ?>
 <div class="container-fluid landing min-vh-100">
-
+    <?php include ("static/includes/navbar.php")?>
 </div>
 
 
