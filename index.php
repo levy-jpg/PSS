@@ -23,9 +23,9 @@ include("static/includes/lotprocessor.php");
                 <h3>Hello, Choose Your Preffered Parking Place</h3>
                 <label for="prefFloor" class="h4">Select Floor</label>
                 <select name="prefFloor" id="prefFloor" class="form-control btn btn-outline-success">
-                    <option value="0">Ground Floor</option>
-                    <option value="1">First Floor</option>
-                    <option value="2">Second Floor</option>
+                    <option value="groundfloor">Ground Floor</option>
+                    <option value="firstfloor">First Floor</option>
+                    <option value="secondfloor">Second Floor</option>
                 </select>
             </div>
         </div>

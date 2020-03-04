@@ -30,6 +30,13 @@ body {
     transition: all .5s;
 }
 
+span.floor{
+    font-size:40px;
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px #000;
+    text-transform: uppercase;
+}
 #turnspace {
     transition: all .5s;
     border: 2px solid #E5D663;
@@ -39,11 +46,9 @@ body {
   #00000036 15px,
   #E5D663 0,
   #E5D663 40px);
-    color: #fff;
-    font-weight: 900;
+
     writing-mode: vertical-rl; display: flex;
     text-orientation: mixed; justify-content: center; align-items: center;
-    font-size: xx-large; text-shadow: 2px 2px #000000;
 }
 #leftlots div, #rightlots div{
     border: solid #E5D663;
@@ -52,18 +57,23 @@ body {
     align-items: center; color: #fff;
     text-shadow: 3px 2px 1px #000000; font-weight: 900;
     font-size: x-large;
+    text-transform: capitalize;
 }
 .lotSpecial {
     background: rgba(132, 0, 255, 0.692);
+    text-transform: capitalize;
 }
 .lotBooked {
     background: rgba(255, 0, 0, 0.589);
+    text-transform: capitalize;
 }
 .lotAvailable {
     background: rgba(0, 128, 0, 0.609);
+    text-transform: capitalize;
 }
 .lotInactive {
     background: rgba(128, 128, 128, 0.678);
+    text-transform: capitalize;
 }
 #leftlots div:hover, #rightlots div:hover{
     background: rgba(53, 169, 236, 0.582);

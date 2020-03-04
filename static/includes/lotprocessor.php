@@ -1,7 +1,8 @@
 <?php include ("db.php");
   class lotFetch extends db{
     public function fetchLeftLots(){
-        $sql = "SELECT * FROM firstfloor ORDER BY id ASC LIMIT 6";
+      $table = $_POST['lotFloor'];
+        $sql = "SELECT * FROM $table ORDER BY id ASC LIMIT 6";
         $conn = $this->connect();
         $result = $conn->query($sql);
        // echo $result->num_rows;
@@ -11,19 +12,19 @@
             if($special == 1){
               $output = '
                   <div class="flex-fill lotSpecial">
-                     Special Parking
+                    '.$row['lotName'].'
                   </div>';
             }else {
                 if(($row['booked']) == 0){
                   $output = '
                   <div class="flex-fill lotAvailable">
-                     Available
+                    '.$row['lotName'].'
                   </div>';
                 }
                 elseif(($row['booked'])==1){
                   $output = '
                   <div class="flex-fill lotBooked">
-                     Occupied
+                    '.$row['lotName'].'
                   </div>';
                 }
             }
@@ -33,8 +34,8 @@
     }
 
     public function fetchRightLots(){
-        $floor = "firstfloor";
-        $sql = "SELECT * FROM $floor ORDER BY id DESC LIMIT 6";
+      $table = $_POST['lotFloor'];
+        $sql = "SELECT * FROM $table ORDER BY id DESC LIMIT 6";
         $conn = $this->connect();
         $result = $conn->query($sql);
        // echo $result->num_rows;
