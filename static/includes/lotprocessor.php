@@ -33,7 +33,8 @@
     }
 
     public function fetchRightLots(){
-        $sql = "SELECT * FROM firstfloor ORDER BY id DESC LIMIT 6";
+        $floor = "firstfloor";
+        $sql = "SELECT * FROM $floor ORDER BY id DESC LIMIT 6";
         $conn = $this->connect();
         $result = $conn->query($sql);
        // echo $result->num_rows;
