@@ -15,7 +15,11 @@ include ("head.php");
             </div>
             <div class="form-group">
                 <label for="lotFloor">Lot Floor</label>
-                <input type="number" id="lotFloor" name="lotFloor" min="0" max="3" class="form-control" maxlength="1" required>
+                <select id="lotFloor" name="lotFloor" class="form-control" required>
+                    <option value="0">Ground Floor</option>
+                    <option value="1">First Floor</option>
+                    <option value="2">Second Floor</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="status">Status</label>

@@ -11,7 +11,7 @@ $(document).ready(function(){
   }
 setInterval(function(){
    orientation();
-},200)
+},200);
 
 
   $("form#addLotForm").submit(function(event){
@@ -24,17 +24,22 @@ setInterval(function(){
    });
   });
 
-  setInterval(function(){
+ var leftLots = function(){
      var submit = "leftLots";
-      $.post("static/includes/processor.php",{submit:submit},function(data){
+     var floor = $("#prefFloor option:selected").val();
+      $.post("static/includes/processor.php",{submit:submit, lotFloor:floor},function(data){
          $("#leftlots").html(data);
-      });
-  },1000);
-
-    setInterval(function(){
-     var submit = "rightLots";
-      $.post("static/includes/processor.php",{submit:submit},function(data){
+         $(".floor").html(floor);
+      })};
+var rightLots = function(){
+   var submit = "rightLots";
+   var floor = $("#prefFloor option:selected").val();
+      $.post("static/includes/processor.php",{submit:submit, lotFloor:floor},function(data){
          $("#rightlots").html(data);
-      });
-  },1000);
+      })};
+//AUTO REFRESH THE 
+      setInterval(function(){
+         leftLots();
+         rightLots();
+      },1000);
 });
