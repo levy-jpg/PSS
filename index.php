@@ -1,53 +1,44 @@
 <?php
 $page = "Home";
 include("head.php");
+include("static/includes/lotprocessor.php");
 ?>
 <div class="container-fluid landing min-vh-100">
 
 </div>
-<div class="container p-4">
+
+
+<div class="container-fluid" id="turn-landscape">
+    <div class="row justify-content-center vh-100 align-items-center text-center">
+        <div class="loader"></div>
+        <p class="text-danger col-sm-12">ALERT!!!</p>
+        <p class="text-white col-sm-12">PLEASE TURN TO LANDSCAPE MODE TO VIEW AND BOOK A PARKING LOT! THE CURRENT FLOOR PLOTTING DOESN'T SUPPORT VIEWING IN PORTRAIT ORIENTATION.</p>
+    </div>
+</div>
+
+
+<div class="container-fluid" id="parking-cont">
+        <div class="text-center">
+            <div class="form-group card px-3 py-1">
+                <h3>Hello, Choose Your Preffered Parking Place</h3>
+                <label for="prefFloor" class="h4">Select Floor</label>
+                <select name="prefFloor" id="prefFloor" class="form-control btn btn-outline-success">
+                    <option value="0">Ground Floor</option>
+                    <option value="1">First Floor</option>
+                    <option value="2">Second Floor</option>
+                </select>
+            </div>
+        </div>
     <div class="row min-vh-90 p-auto rounded justify-content-center p-1" id="lotfloor">
         <div class="col-sm-4 d-flex flex-column" id="leftlots">
-            <div class="flex-fill lotSpecial">
-                A1
-            </div>
-            <div class="flex-fill lotAvailable">
-                A2
-            </div>
-            <div class="flex-fill lotBooked">
-                A3
-            </div>
-            <div class="flex-fill">
-                A4
-            </div>
-            <div class="flex-fill">
-                A5
-            </div>
-            <div class="flex-fill">
-                A6
-            </div>
+           
         </div>
         <div class="col-sm-4 p-1 d-flex">
-            <div class="flex-fill" id="turnspace"></div>
+            <div class="flex-fill text-vertical" id="turnspace">
+                <span class="floor">LoAdInG...</span>
+            </div>
         </div>
         <div class="col-sm-4 d-flex flex-column" id="rightlots">
-            <div class="flex-fill">
-                A12
-            </div>
-            <div class="flex-fill">
-                A11
-            </div>
-            <div class="flex-fill">
-                A10
-            </div>
-            <div class="flex-fill">
-                A9
-            </div>
-            <div class="flex-fill">
-                A8
-            </div>
-            <div class="flex-fill">
-                A7
-            </div>
+            
         </div>
     </div>
