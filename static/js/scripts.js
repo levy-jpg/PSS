@@ -29,6 +29,7 @@ setInterval(function(){
      var floor = $("#prefFloor option:selected").val();
       $.post("static/includes/processor.php",{submit:submit, lotFloor:floor},function(data){
          $("#leftlots").html(data);
+         $(".floor").html(floor);
       })};
 var rightLots = function(){
    var submit = "rightLots";
