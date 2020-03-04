@@ -12,7 +12,7 @@ include("static/includes/lotprocessor.php");
     <div class="row justify-content-center vh-100 align-items-center text-center">
         <div class="loader"></div>
         <p class="text-danger col-sm-12">ALERT!!!</p>
-        <p class="text-white col-sm-12">PLEASE TURN TO LANDSCAPE MODE TO VIEW AND BOOK A PARKING LOT! THE CURRENT FLOOR PLOTTING DOESN'T SUPPORT VIEWING IN PORTRAIT ORIENTATION.</p>
+        <p class="text-white col-sm-12">PLEASE TURN TO LANDSCAPE MODE TO VIEW AND BOOK A PARKING LOT! THE CURRENT FLOOR PLOTTING DOESN'T SUPPORT VIEWING IN PORTRAIT ORIENTATION!</p>
     </div>
 </div>
 
