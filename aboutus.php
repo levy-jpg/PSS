@@ -24,9 +24,8 @@ include ("head.php");
                 conducive eco-system of parking-management. </p>
             <section class="text-center">
                 <button class="btn btn-success">Get Quote</button>
-</section>
+            </section>
         </div>
-
     </div>
 </div>
 
@@ -75,8 +74,7 @@ include ("head.php");
                 <div class="card-body">
                     <h2>Stacey Bonareri</h2>
                     <p class="small">FRONT-END DEVELOPER</p>
-                    <p>Stacey is a talented lady who in conjuction with Najla ensure that the clients needs and
-                        aesthetics are met.</p>
+                    <p>Stacey is a talented lady who in conjuction with Najla ensure that the clients needs and aesthetics are met.</p>
                     <p>stacylorrain@gmail.com</p>
                 </div>
             </div>
@@ -95,4 +93,22 @@ include ("head.php");
         </div>
     </div>
 
+</div>
+<div class="container text-align-center">
+     <h4>CONTACT US</h4>
+        <div class="form-group">
+            <label for="email">EMAIL</label>
+            <input type="text" class="form-control" id="email"name="email">
+        </div>
+        <div class="form-group">
+            <label for="subject">SUBJECT</label>
+            <input type="text"class="form-control"id="subject"name="subject">
+        </div>
+        <div class="form-group">
+            <label for="writemessege">Write Messege</label>
+            <input type="text"class="form-control"id="writemessege"name="writemessge">
+        </div>
+        <section class="text-center">
+                <button class="btn btn-success">SUBMIT</button>
+            </section>
 </div>
