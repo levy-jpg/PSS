@@ -39,6 +39,14 @@ include("static/includes/lotprocessor.php");
             </div>
         </div>
         <div class="col-sm-4 d-flex flex-column" id="rightlots">
+<form>
+        Username:<br/>
+<input type="text" name="username"><br/>
+Password<br/>
+<input type="password" name="password"> <br/>
+<input type="submit" value="login">
+</form>
+
             
         </div>
     </div>
