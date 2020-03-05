@@ -94,21 +94,23 @@ include ("head.php");
     </div>
 
 </div>
-<div class="container text-align-center">
+<div class="container text-align-center" id="aus">
      <h4>CONTACT US</h4>
+     <form action="">
         <div class="form-group">
-            <label for="email">EMAIL</label>
-            <input type="text" class="form-control" id="email"name="email">
+                <label for="email">EMAIL</label>
+                <input type="text" class="form-control" id="email"name="email">
+            </div>
+            <div class="form-group">
+                <label for="subject">SUBJECT</label>
+                <input type="text"class="form-control"id="subject"name="subject">
+            </div>
+            <div class="form-group">
+                <label for="writemessege">Write Messege</label>
+                <input type="text"class="form-control"id="writemessege"name="writemessge">
+            </div>
+            <section class="text-center">
+                    <button class="btn btn-success">SUBMIT</button>
+                </section>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="subject">SUBJECT</label>
-            <input type="text"class="form-control"id="subject"name="subject">
-        </div>
-        <div class="form-group">
-            <label for="writemessege">Write Messege</label>
-            <input type="text"class="form-control"id="writemessege"name="writemessge">
-        </div>
-        <section class="text-center">
-                <button class="btn btn-success">SUBMIT</button>
-            </section>
-</div>
