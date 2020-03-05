@@ -20,7 +20,7 @@ $(document).ready(function(){
   var getStats = function(){
       var x = $("select#statFloor").val();
       $.post("includes/processor.php",{getStats:"getStats", table:x},function(data){
-            $("#tablestats").html(]data);
+            $("#tablestats").html(data);
       });
   }
 
