@@ -35,7 +35,7 @@ include("static/includes/lotprocessor.php");
         </div>
         <div class="col-sm-4 p-1 d-flex">
             <div class="flex-fill text-vertical" id="turnspace">
-                <span class="floor">LoAdInG...</span>
+                <span class="floor">Loading...</span>
             </div>
         </div>
         <div class="col-sm-4 d-flex flex-column" id="rightlots">
