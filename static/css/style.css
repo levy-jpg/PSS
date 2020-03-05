@@ -47,8 +47,11 @@ span.floor{
   #E5D663 0,
   #E5D663 40px);
 
-    writing-mode: vertical-rl; display: flex;
+ display: flex;
     text-orientation: mixed; justify-content: center; align-items: center;
+}
+#turnspace span {
+    writing-mode: vertical-rl;
 }
 #leftlots div, #rightlots div{
     border: solid #E5D663;
@@ -108,3 +111,17 @@ span.floor{
     50% { transform: rotate(270deg);}
     100% { transform: rotate(-360deg); }
   }
+
+
+  .bookFormCont {
+      background: rgba(0, 0, 0, 0.828);
+      display: none;
+  }
+
+  #close {
+      position: absolute;
+      right: 25%;
+      top: 30%;
+      font-weight: 900;
+      font-size: large;
+     }

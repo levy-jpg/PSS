@@ -11,19 +11,19 @@
             $lotStatus = $row['lotStatus'];
             if($special == 1){
               $output = '
-                  <div class="flex-fill lotSpecial">
+                  <div class="flex-fill lot lotSpecial">
                     '.$row['lotName'].'
                   </div>';
             }else {
                 if(($row['booked']) == 0){
                   $output = '
-                  <div class="flex-fill lotAvailable">
+                  <div class="flex-fill lot lotAvailable" >
                     '.$row['lotName'].'
                   </div>';
                 }
                 elseif(($row['booked'])==1){
                   $output = '
-                  <div class="flex-fill lotBooked">
+                  <div class="flex-fill lot lotBooked" onclick="getMe()">
                     '.$row['lotName'].'
                   </div>';
                 }
@@ -33,6 +33,7 @@
        
     }
 
+    
     public function fetchRightLots(){
       $table = $_POST['lotFloor'];
         $sql = "SELECT * FROM $table ORDER BY id DESC LIMIT 6";
@@ -44,19 +45,21 @@
             $lotStatus = $row['lotStatus'];
             if($special == 1){
               $output = '
-                  <div class="flex-fill lotSpecial">
+                  <div class="flex-fill lot lotSpecial">
                     '.$row['lotName'].'
                   </div>';
             }else {
                 if(($row['booked']) == 0){
                   $output = '
+
                   <div class="flex-fill lotAvailable">
                     '.$row['lotName'].'
                   </div>';
                 }
                 elseif(($row['booked'])==1){
                   $output = '
-                  <div class="flex-fill lotBooked">
+                  <div class="flex-fill lot lotBooked" onclick="getMe()">
+
                     '.$row['lotName'].'
                   </div>';
                 }
@@ -65,6 +68,11 @@
         }
        
     }
+<<<<<<< HEAD
   } 
+=======
+
+  }  
+>>>>>>> 286f23f0d46f960c57440a0c3a3769c93d98bf71
 ?>
 
