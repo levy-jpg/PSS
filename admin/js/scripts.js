@@ -1,7 +1,5 @@
 
 $(document).ready(function(){
-  
-  
       //Admin site scripts
       var getGroundStats = function () {
         $.post("includes/processor.php", { stats: "ground" }, function (data) {
@@ -19,12 +17,19 @@ $(document).ready(function(){
         });
     }
   
-  
+  var getStats = function(){
+      var x = $("select#statFloor").val();
+      $.post("includes/processor.php",{getStats:"getStats", table:x},function(data){
+            $("#tablestats").html(data);
+      });
+  }
+
   //AUTO REFRESH AFTER ONE SECOND
         setInterval(function(){
            getSecondStats();
            getGroundStats();
            getFirstStats();
+           getStats();
         },500);
   });
   

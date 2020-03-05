@@ -28,3 +28,7 @@ body {
     padding: 4px;border-radius: 4px; display: flex;
     font-weight: 700; font-size: large;
 }
+
+#tablestats tr:nth-child(odd){
+    background: rgba(63, 63, 63, 0.719);
+}
