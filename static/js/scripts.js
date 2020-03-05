@@ -9,10 +9,10 @@ $(document).ready(function(){
       $("#parking-cont").fadeIn();
    }
   }
-setInterval(function(){
-   orientation();
-},200);
 
+  setInterval(function(){
+     orientation();
+  }, 200);
 
   $("form#addLotForm").submit(function(event){
       // Stop form from submitting normally
@@ -37,7 +37,10 @@ var rightLots = function(){
       $.post("static/includes/processor.php",{submit:submit, lotFloor:floor},function(data){
          $("#rightlots").html(data);
       })};
-//AUTO REFRESH THE 
+
+
+
+//AUTO REFRESH AFTER ONE SECOND
       setInterval(function(){
          leftLots();
          rightLots();

@@ -51,13 +51,15 @@
             }else {
                 if(($row['booked']) == 0){
                   $output = '
-                  <div class="flex-fill lot lotAvailable" >
+
+                  <div class="flex-fill lotAvailable">
                     '.$row['lotName'].'
                   </div>';
                 }
                 elseif(($row['booked'])==1){
                   $output = '
                   <div class="flex-fill lot lotBooked" onclick="getMe()">
+
                     '.$row['lotName'].'
                   </div>';
                 }

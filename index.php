@@ -31,18 +31,24 @@ include("static/includes/lotprocessor.php");
         <div class="col-sm-4 d-flex flex-column" id="leftlots">
            
         </div>
-        <div class="col-sm-4 p-1 d-flex flex-column" id="turnspace">
-            <div>
-                <button class="btn btn-danger book">Book</button>
-            </div>
-            <div class="flex-fill text-vertical text-center row">
-                <span class="floor">LoAdInG...</span>
+      
+        <div class="col-sm-4 p-1 d-flex">
+            <div class="flex-fill text-vertical" id="turnspace">
+                <span class="floor">Loading...</span>
             </div>
             <div class="">
                 <button class="btn btn-danger book">Book</button>
             </div>
         </div>
         <div class="col-sm-4 d-flex flex-column" id="rightlots">
+<form>
+        Username:<br/>
+<input type="text" name="username"><br/>
+Password<br/>
+<input type="password" name="password"> <br/>
+<input type="submit" value="login">
+</form>
+
             
         </div>
 

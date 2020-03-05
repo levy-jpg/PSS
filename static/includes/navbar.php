@@ -5,14 +5,14 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link"  href="#">PSS Kenya<span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link"  href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="navB" href="#">Parking</a>
+        <a class="nav-link"  href="#">Booking</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="navC" href="#">Link1</a>
+        <a class="nav-link" href="#">Link1</a>
       </li>
     </ul>
     <span class="navbar-text">

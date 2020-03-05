@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/admin.css">
     <script src="../static/js/jquery-3.4.1.js"></script>
     <script src="../static/js/bootstrap.js"></script>
-    <script src="../static/js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
     <title><?php echo $page?> | PSS</title>
     <?php include_once ("../static/includes/db.php");?>
 </head>
