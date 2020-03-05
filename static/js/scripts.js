@@ -45,4 +45,15 @@ var rightLots = function(){
          leftLots();
          rightLots();
       },1000);
+
+
+      $(".book").click(function(){
+         $(".bookFormCont").slideDown();
+      });
+
+      $("#close").click(function(){
+         $(".bookFormCont").slideUp();
+      });
+      
 });
+
