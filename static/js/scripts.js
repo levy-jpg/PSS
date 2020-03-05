@@ -14,15 +14,7 @@ $(document).ready(function(){
      orientation();
   }, 200);
 
-  $("form#addLotForm").submit(function(event){
-      // Stop form from submitting normally
-      event.preventDefault();
-   var data = $("form#addLotForm :input").serializeArray();
 
-   $.post($("form#addLotForm").attr("action"),data, function(info){
-      $("#feedback").html(info);
-   });
-  });
 
  var leftLots = function(){
      var submit = "leftLots";
