@@ -14,15 +14,7 @@ $(document).ready(function(){
      orientation();
   }, 200);
 
-  $("form#addLotForm").submit(function(event){
-      // Stop form from submitting normally
-      event.preventDefault();
-   var data = $("form#addLotForm :input").serializeArray();
 
-   $.post($("form#addLotForm").attr("action"),data, function(info){
-      $("#feedback").html(info);
-   });
-  });
 
  var leftLots = function(){
      var submit = "leftLots";
@@ -39,7 +31,14 @@ var rightLots = function(){
       })};
 
 
-
+//BOOKING
+$("#bookingform").submit(function(e){
+   e.preventDefault();
+      $("input[name=floorq][id=floorq]").val($("#prefFloor option:selected").val());
+     var data = $("form#bookingform :input").serializeArray();
+     $.post("static/includes/processor.php", data,function(feed){
+     });
+});
 //AUTO REFRESH AFTER ONE SECOND
       setInterval(function(){
          leftLots();

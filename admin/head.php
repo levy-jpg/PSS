@@ -10,6 +10,9 @@
     <script src="../static/js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
     <title><?php echo $page?> | PSS</title>
-    <?php include_once ("../static/includes/db.php");?>
-</head>
-<body>
+    <?php include_once ("../static/includes/db.php");
+    echo "
+    </head>
+<body>";
+        include ("includes/navbar.php");
+    ?>
