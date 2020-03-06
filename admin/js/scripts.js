@@ -24,6 +24,24 @@ $(document).ready(function(){
       });
   }
 
+  $("form#addLotForm").submit(function(event){
+    // Stop form from submitting normally
+    event.preventDefault();
+     var data = $("form#addLotForm :input").serializeArray();
+     $. post($("form#addLotForm").attr("action"),data, function(info){
+        $("#feedback").html(info);
+     });
+});
+
+
+//manage /edit lots
+$("select#floor").find("option").click(function(){
+    var value = $(this).val();
+    $.post("includes/processor.php", {fetchEdit:"", table:value},function(data){
+        $("#editlotFormContent").html(data);
+    });
+});
+
   //AUTO REFRESH AFTER ONE SECOND
         setInterval(function(){
            getSecondStats();
