@@ -70,8 +70,41 @@ if(isset($_POST['getStats'])){
         }
     }
 }
+class fetchEdit extends db {
+    public function getlotDetails(){
+        $conn = $this->connect();
+        $table = $_POST['table'];
+        $sql = "SELECT * FROM $table";
+        foreach($conn->query($sql) as $row){
+            $output = '
+            <div class="form-group ">
+                <label for="">Lot id</label>
+                <input type="number" class="form-control text-black" name="lotName" value='.$row['id'].' id="" readonly>
+            </div>
+            <div class="form-group ">
+                <label for="lotstatus">Lot Status</label>
+                <select class="form-control" name="lotName" id="lotstatus" required>
+                    <option value="" selected disabled>Select Lot Status</option>
+                    <option value="" >Out Of Service</option>
+                    <option value="" >On Service</option>
+                </select>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn form-control btn-success m-1">Update</button>
+                <button type="reset" class="btn btn-danger m-1 form-control">Discard</button>
+            </div>
+        </form>
+            ';
+            echo $output;
+        }
+    }
+}
 
 
+if(isset($_POST['fetchEdit'])){
+    $object = new fetchEdit;
+    $object->getlotDetails();
+}
 if (isset($_POST['stats'])) {
     $object = new stats;
     if($_POST['stats']== "ground"){

@@ -31,7 +31,14 @@ var rightLots = function(){
       })};
 
 
-
+//BOOKING
+$("#bookingform").submit(function(e){
+   e.preventDefault();
+      $("input[name=floorq][id=floorq]").val($("#prefFloor option:selected").val());
+     var data = $("form#bookingform :input").serializeArray();
+     $.post("static/includes/processor.php", data,function(feed){
+     });
+});
 //AUTO REFRESH AFTER ONE SECOND
       setInterval(function(){
          leftLots();

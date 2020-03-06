@@ -2,8 +2,8 @@ body {
     background: #121212;
     color: rgb(220, 220, 220);
 }
-#addLotForm {
-    background: rgba(255, 255, 255, 0.383);
+#addLotForm, #editLotForm {
+    background: rgba(255, 255, 255, 0.192);
     padding: 4px;
     border-radius: 20px 4px;
     margin: 2px;
